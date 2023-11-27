@@ -94,7 +94,7 @@ class _SearchState extends State<Search> {
     return Scaffold(
       appBar: AppBar(
         title: Container(
-          padding: EdgeInsets.only(right: 5),
+          padding: const EdgeInsets.only(right: 5),
           child: SearchInput(
               value: search, placeholder: 'Search..', onSubmit: handleSubmit),
         ),

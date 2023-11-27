@@ -38,8 +38,8 @@ class _HomePageState extends State<HomePage> {
       setState(() {
         init = false;
       });
+      Provider.of<GlobalProvider>(context, listen: false).getFavoritesPhotos();
     }
-    Provider.of<GlobalProvider>(context).getFavoritesPhotos();
     super.didChangeDependencies();
   }
 

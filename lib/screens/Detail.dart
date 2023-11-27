@@ -62,6 +62,7 @@ class _DetailPhotoState extends State<DetailPhoto> {
           'favorites', jsonEncode({data!.id: data!.toJson()}));
     }
     setState(() {
+      Provider.of<GlobalProvider>(context, listen: false).getFavoritesPhotos();
       isFavorite = favorite;
     });
   }
